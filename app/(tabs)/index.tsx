@@ -1,5 +1,4 @@
 import { View, StyleSheet } from "react-native";
-import { Image } from "expo-image";
 import ImageViewer from "@/components/ImageViewer";
 import Button from "@/components/Button";
 
@@ -12,7 +11,7 @@ export default function Index() {
         <ImageViewer imgSource={PlaceholderImage} />
       </View>
       <View style={styles.footerContainer}>
-        <Button label="Choose a photo" />
+        <Button theme="primary" label="Choose a photo" />
         <Button label="Use this photo" />
       </View>
     </View>
