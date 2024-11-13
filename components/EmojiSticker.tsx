@@ -1,4 +1,5 @@
 import { View } from "react-native";
+import Animated from "react-native-reanimated";
 import { Image, type ImageSource } from "expo-image";
 
 type Props = {
@@ -9,8 +10,9 @@ type Props = {
 export default function EmojiSticker({ imageSize, stickerSource }: Props) {
   return (
     <View style={{ top: -350 }}>
-      <Image
+      <Animated.Image
         source={stickerSource}
+        resizeMode="contain"
         style={{ width: imageSize, height: imageSize }}
       />
     </View>
