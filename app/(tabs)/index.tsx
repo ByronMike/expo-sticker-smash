@@ -82,9 +82,9 @@ export default function Index() {
             imgSource={PlaceholderImage}
             selectedImage={selectedImage}
           />
-          {pickedEmoji && (
+          {pickedEmoji ? (
             <EmojiSticker imageSize={40} stickerSource={pickedEmoji} />
-          )}
+          ) : null}
         </View>
       </View>
       {showAppOptions ? (
