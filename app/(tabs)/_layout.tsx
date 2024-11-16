@@ -1,7 +1,15 @@
 import { Ionicons } from "@expo/vector-icons";
 import { Tabs } from "expo-router";
+import { setStatusBarStyle } from "expo-status-bar";
+import { useEffect } from "react";
 
 export default function TabLayout() {
+  useEffect(() => {
+    setTimeout(() => {
+      setStatusBarStyle("light");
+    }, 0);
+  }, []);
+
   return (
     <Tabs
       screenOptions={{
